@@ -5,7 +5,7 @@ class Circle
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter radius: ");
 		float r = sc.nextFloat();
-		System.out.println("Perimeter: " + 2*Math.PI*r);		
-		System.out.println("Area: " + r*Math.PI*r);
+		System.out.format("Perimeter: %.3f\n" ,2*Math.PI*r);
+		System.out.format("Area: %.3f", Math.PI*r*r);
 	}
 }

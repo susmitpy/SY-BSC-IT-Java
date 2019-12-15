@@ -8,22 +8,22 @@ class Conversion{
 		System.out.println("Binary: " + decToBin(n));
 		System.out.println("Enter Binary no. ");
 		int b = sc.nextInt();
-		String bin = String.valueOf(b);
-		System.out.println("Decimal: " + String.valueOf(binToDec(bin)));
+		System.out.println("Decimal: " + binToDec(b));
 	}
 
 	static String decToBin(int n){
 		String b = "";
-		int r,q;
+		int r;
 		while (n!=0){
 			r = n % 2;
-			b = String.valueOf(r)+ b;  
+			b = String.valueOf(r)+ b;
 			n /= 2;
 		}
 		return b;
 	}
 
-	static int binToDec(String b){
+	static String binToDec(int bin){
+		String b = String.valueOf(bin);
 		int n = 0;		
 		char c;
 		double msb = Math.pow(2,b.length()-1);
@@ -34,7 +34,7 @@ class Conversion{
 			}
 			msb /= 2;
 		}
-		return n;
+		return String.valueOf(n);
 	}
 }
 
@@ -46,7 +46,7 @@ op	quotient   remainder	  bin
 12/2	  6		0	   0
 6/2       3             0          00
 3/2	  1 		1	   100
-1/2	  0		1 	   1100		
+1/2	  0		1 	   1100
 
 6: 32 16 8 4 2 1
 4: 8 4 2 1
