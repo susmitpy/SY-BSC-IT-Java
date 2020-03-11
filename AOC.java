@@ -1,7 +1,7 @@
 // Write a AWT Program to calculate Area of a Circle
 
 import java.awt.*;
-import java.awt.event.*; // necessary because above statement does not sub packages of java.awt
+import java.awt.event.*; // necessary because above statement does not import sub packages of java.awt
 
 class AOC extends Frame implements ActionListener {
   /*
